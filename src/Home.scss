@@ -1,0 +1,50 @@
+@import "styles/_base";
+
+.header {
+  align-items: center;
+  display: flex;
+  margin: 2% 0;
+  width: 100%;
+}
+
+.header-image {
+  background-image: url("/images/elizabeth-portrait.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: $border-radius;
+  height: 600px;
+  margin-left: -$column-width;
+}
+
+.header-text {
+  padding-left: $column-width * 3;
+  z-index: 2;
+}
+
+.projects-wrapper {
+  background: $light-pink;
+  height: 800px;
+  margin-top: -110px;
+  padding-top: 110px;
+}
+
+.projects {
+  display: flex;
+  flex: 1;
+  // margin-left: $column-width * 3;
+}
+
+.project-number {
+  @extend .column-1;
+  text-align: right;
+}
+
+.project {
+  display: flex;
+  .image {
+    background-color: $pink;
+    border-radius: $border-radius;
+    height: 200px;
+    margin-bottom: 16px;
+  }
+}

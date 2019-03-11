@@ -1,0 +1,17 @@
+// Grid
+$column-width: 8%;
+// $column-width: 8vw;
+$gutter: 16px;
+
+.column {
+  // margin: 0 ($gutter/2);
+  padding: 0 ($gutter/2);
+  // padding: 0;
+}
+
+@for $i from 1 to 12 {
+  .column-#{$i} {
+    @extend .column;
+    width: $column-width * $i;
+  }
+}
