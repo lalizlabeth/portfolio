@@ -9,15 +9,7 @@
   text-align: right;
   z-index: 3;
   a {
-    color: $off-black;
-    display: block;
-    font-family: "PT Mono", monospace;
-    font-size: 17px;
-    margin-bottom: 48px;
-    text-decoration: none;
-    &.active {
-      color: $pink;
-    }
+    margin-bottom: 36px;
     &:hover {
       text-decoration: underline;
     }

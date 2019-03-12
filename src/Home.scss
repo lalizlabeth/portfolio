@@ -3,8 +3,8 @@
 .header {
   align-items: center;
   display: flex;
-  margin: 2% 0;
-  width: 100%;
+  margin-left: $column-width * 3;
+  padding: 2vw 0;
 }
 
 .header-image {
@@ -17,34 +17,50 @@
 }
 
 .header-text {
-  padding-left: $column-width * 3;
-  z-index: 2;
+  z-index: 4;
 }
 
 .projects-wrapper {
   background: $light-pink;
   height: 800px;
-  margin-top: -110px;
-  padding-top: 110px;
+  margin-top: -90px;
+  padding-top: 90px;
 }
 
 .projects {
   display: flex;
-  flex: 1;
-  // margin-left: $column-width * 3;
+  flex-direction: row;
+  margin-left: $column-width * 2;
 }
 
 .project-number {
-  @extend .column-1;
   text-align: right;
 }
 
 .project {
+  box-sizing: border-box;
   display: flex;
+  p {
+    color: $gray;
+  }
   .image {
-    background-color: $pink;
+    background-color: $white;
     border-radius: $border-radius;
     height: 200px;
     margin-bottom: 16px;
+  }
+}
+
+#project-2 {
+  flex-direction: column;
+  margin-top: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  .project-number {
+    text-align: left;
+    margin-bottom: 1vw;
+  }
+  .image {
+    height: 300px;
   }
 }

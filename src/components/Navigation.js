@@ -4,7 +4,7 @@ import './Navigation.scss';
 class Navigation extends Component {
   render() {
     return (
-      <nav className="navigation column-2">
+      <nav className="navigation col-2">
         <a className="active" href="">Home</a>
         <a href="">About</a>
         <a href="">Design</a>

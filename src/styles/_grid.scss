@@ -1,16 +1,16 @@
 // Grid
-$column-width: 8%;
-// $column-width: 8vw;
-$gutter: 16px;
+// $column-width: 8%;
+$column-width: 8vw;
+// $gutter: 32px;
+$gutter: 2vw;
 
 .column {
-  // margin: 0 ($gutter/2);
+  box-sizing: border-box;
   padding: 0 ($gutter/2);
-  // padding: 0;
 }
 
 @for $i from 1 to 12 {
-  .column-#{$i} {
+  .col-#{$i} {
     @extend .column;
     width: $column-width * $i;
   }
