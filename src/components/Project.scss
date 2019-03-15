@@ -1,0 +1,24 @@
+@import "../styles/_base";
+
+.project-header {
+  height: auto;
+}
+
+.project-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  color: $gray;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+p.large-paragraph {
+  color: $off-black;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 48px;
+}

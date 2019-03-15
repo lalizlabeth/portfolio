@@ -12,3 +12,12 @@ body {
 html {
   box-sizing: border-box;
 }
+
+.header {
+  align-items: center;
+  display: flex;
+}
+
+.image {
+  border-radius: $border-radius;
+}

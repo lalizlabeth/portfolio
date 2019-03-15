@@ -1,19 +1,11 @@
 @import "styles/_base";
 
-.header {
-  align-items: center;
-  display: flex;
-  margin-left: $column-width * 3;
-  padding: 2vw 0;
-}
-
 .header-image {
   background-image: url("/images/elizabeth-portrait.jpeg");
   background-position: center;
   background-size: cover;
   border-radius: $border-radius;
   height: 600px;
-  margin-left: -$column-width;
 }
 
 .header-text {
@@ -22,15 +14,14 @@
 
 .projects-wrapper {
   background: $light-pink;
-  height: 800px;
   margin-top: -90px;
-  padding-top: 90px;
+  padding: 90px 0;
 }
 
 .projects {
   display: flex;
   flex-direction: row;
-  margin-left: $column-width * 2;
+  flex-wrap: wrap;
 }
 
 .project-number {
@@ -45,9 +36,23 @@
   }
   .image {
     background-color: $white;
+    background-size: cover;
+    background-position: center;
     border-radius: $border-radius;
-    height: 200px;
+    height: 250px;
     margin-bottom: 16px;
+  }
+  .project-link {
+    display: flex;
+    &:hover {
+      cursor: pointer;
+      h2 {
+        color: $pink;
+      }
+      .image {
+
+      }
+    }
   }
 }
 
@@ -63,4 +68,9 @@
   .image {
     height: 300px;
   }
+}
+
+#project-3 {
+  @extend .offset-1;
+  margin-top: 60px;
 }
