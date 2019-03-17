@@ -15,3 +15,28 @@
     }
   }
 }
+
+// Media Queries
+@media screen and (max-width: 450px) {
+  .navigation {
+    &.col-2 {
+      padding: 0;
+    }
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-start;
+    overflow: scroll;
+    position: fixed;
+    text-align: left;
+    z-index: 100;
+    a {
+      background: $pink;
+      color: $white;
+      margin-bottom: 0;
+      padding: 16px;
+      &.active {
+        background: $white;
+      }
+    }
+  }
+}

@@ -1,6 +1,24 @@
 // Grid
-$column-width: 8vw;
-$gutter: 2vw;
+// $column-width: 8vw;
+// $gutter: 2vw;
+
+$column-width: 128px;
+$gutter: 32px;
+
+$xsmall-spacer: 8px;
+$small-spacer: 16px;
+$medium-spacer: 32px;
+$large-spacer: 48px;
+$xlarge-spacer: 64px;
+$xxlarge-spacer: 72px;
+
+$max-width: $column-width * 12;
+
+.page-wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
 
 // Defining columns
 .column {
@@ -11,22 +29,88 @@ $gutter: 2vw;
   }
 }
 
+// Defining offsets
 @for $i from 1 to 12 {
   .col-#{$i} {
     @extend .column;
     width: $column-width * $i;
   }
-}
-
-// Defining offsets
-@for $i from 1 to 12 {
   .offset-#{$i} {
     margin-left: $column-width * $i;
   }
-}
-
-@for $i from 1 to 12 {
   .offset-neg-#{$i} {
     margin-left: - $column-width * $i;
+  }
+}
+
+
+
+@media screen and (max-width: 1536px) {
+  $column-width: 108px;
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      width: $column-width * $i;
+      padding: 0 ($gutter/2);
+    }
+    .offset-#{$i} {
+      margin-left: $column-width * $i;
+    }
+
+    .offset-neg-#{$i} {
+      margin-left: - $column-width * $i;
+    }
+  }
+  .page-wrapper {
+    max-width: $column-width * 12;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  @for $i from 1 to 6 {
+    .col-#{$i} {
+      width: $column-width * $i;
+      padding: 0 ($gutter/2);
+    }
+    .offset-#{$i} {
+      margin-left: $column-width * $i;
+    }
+    .offset-neg-#{$i} {
+      margin-left: - $column-width * $i;
+    }
+    @for $j from 7 to 12 {
+      .col-#{$j} {
+        width: $column-width * $i;
+        padding: 0 ($gutter/2);
+      }
+      .offset-#{$j} {
+        margin-left: $column-width * $i;
+      }
+      .offset-neg-#{$j} {
+        margin-left: - $column-width * $i;
+      }
+    }
+  }
+
+  .page-wrapper {
+    max-width: $column-width * 12;
+  }
+}
+
+
+// Mobile screens
+
+@media screen and (max-width: 450px) {
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      width: 100%;
+    }
+  }
+  @for $i from 1 to 12 {
+    .offset-#{$i} {
+      margin-left: 0;
+    }
+    .offset-neg-#{$i} {
+      margin-left: 0;
+    }
   }
 }

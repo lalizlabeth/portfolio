@@ -4,7 +4,7 @@
 h1 {
   color: $gray;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 60px;
+  font-size: 56px;
   font-weight: 400;
   line-height: 1.15;
   strong {
@@ -15,7 +15,7 @@ h1 {
 h2 {
   color: $off-black;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 8px;
@@ -58,5 +58,45 @@ h6 {
 @for $i from 1 through 6 {
   h#{$i} strong {
     font-weight: 700;
+  }
+}
+
+*::selection {
+  background: #FFF134; /* WebKit/Blink Browsers */
+}
+*::-moz-selection {
+  background: $light-pink; /* Gecko Browsers */
+}
+
+@media screen and (max-width: 1536px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 42px;
+    line-height: 1.05;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  a,
+  h6 {
+    font-size: 14px;
+  }
+  li, p {
+    font-size: 17px;
   }
 }

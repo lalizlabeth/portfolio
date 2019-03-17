@@ -1,7 +1,7 @@
 @import "../styles/_base";
 
 .project-header {
-  height: auto;
+  width: 100%;
 }
 
 .project-title {
@@ -12,13 +12,65 @@
 .project-description {
   color: $gray;
   font-weight: 300;
+  margin-bottom: $medium-spacer;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.large-spacer-top {
+  margin-top: 48px;
+}
+
+.medium-spacer-bottom {
   margin-bottom: 32px;
 }
 
+.medium-spacer-top {
+  margin-top: 32px;
+}
+
+.project-image {
+  border-radius: $border-radius;
+  width: 100%;
+}
+
 p.large-paragraph {
-  color: $off-black;
+  color: $dark-gray;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 48px;
+}
+
+p.reflections {
+  color: $pink;
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+ul.text-list {
+  li {
+    color: $dark-gray;
+    list-style: square;
+    margin-bottom: $small-spacer;
+    strong {
+      font-weight: 600;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text-group {
+    flex-direction: column;
+    margin-bottom: $large-spacer;
+  }
+  p.large-paragraph {
+    font-size: 17px;
+  }
 }

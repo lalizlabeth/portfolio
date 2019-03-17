@@ -6,7 +6,7 @@ class Navigation extends Component {
 
   _getLinkClassName = (link) => {
     const path = this.props.match.params.id || "";
-    return path === link ? "active" : "";
+    return (path.startsWith(link) && link !== "") || path === link ? "active" : "";
   };
 
   render() {
@@ -19,8 +19,6 @@ class Navigation extends Component {
       { path: "experiments", name: "Experiments" },
       { path: "teaching", name: "Teaching" }
     ];
-
-    console.log(this.props.match)
 
     return (
 

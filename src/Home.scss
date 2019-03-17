@@ -1,19 +1,33 @@
 @import "styles/_base";
 
+.header {
+  @extend .col-9;
+  @extend .offset-3;
+  @extend .nested;
+  z-index: 3;
+}
+
+.header-image-wrapper {
+  @extend .col-4;
+  @extend .offset-neg-1;
+}
+
 .header-image {
   background-image: url("/images/elizabeth-portrait.jpeg");
   background-position: center;
   background-size: cover;
   border-radius: $border-radius;
-  height: 600px;
+  height: 550px;
 }
 
 .header-text {
+  @extend .col-4;
   z-index: 4;
 }
 
 .projects-wrapper {
   background: $light-pink;
+  display: flex;
   margin-top: -90px;
   padding: 90px 0;
 }
@@ -38,19 +52,22 @@
     background-color: $white;
     background-size: cover;
     background-position: center;
+    border: 3px solid $light-pink;
     border-radius: $border-radius;
     height: 250px;
-    margin-bottom: 16px;
+    margin-bottom: $small-spacer;
   }
   .project-link {
     display: flex;
     &:hover {
-      cursor: pointer;
       h2 {
-        color: $pink;
+        span.highlight {
+          background-color: $pink;
+          color: $light-pink;
+        }
       }
       .image {
-
+        border: 3px solid $white;
       }
     }
   }
@@ -58,12 +75,12 @@
 
 #project-2 {
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: $xxlarge-spacer;
   padding-left: 0;
   padding-right: 0;
   .project-number {
     text-align: left;
-    margin-bottom: 1vw;
+    margin-bottom: $small-spacer;
   }
   .image {
     height: 300px;
@@ -71,6 +88,67 @@
 }
 
 #project-3 {
-  @extend .offset-1;
-  margin-top: 60px;
+  flex-direction: column;
+  .project-link {
+    display: block;
+  }
+  .project-number {
+    text-align: left;
+    margin-bottom: $small-spacer;
+  }
+  margin-top: -$medium-spacer;
+}
+
+#project-4 {
+  margin-top: $xxlarge-spacer;
+  .project-link {
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .project-number {
+    text-align: left;
+  }
+  .image {
+    height: 360px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .header {
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+  .header-image {
+    height: 400px;
+  }
+  .header-text {
+    margin-top: $medium-spacer;
+    text-align: right;
+  }
+
+  .project .project-link {
+    flex-direction: column;
+  }
+  .project-number {
+    text-align: left;
+    margin-bottom: $xsmall-spacer;
+  }
+  #project-1,
+  #project-2,
+  #project-3
+  #project-4,
+  .project {
+    margin: 32px 0;
+  }
+  .projects-wrapper {
+    border-radius: 0;
+    margin-top: $medium-spacer;
+    padding: $xsmall-spacer 0;
+  }
 }

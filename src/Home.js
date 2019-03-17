@@ -3,16 +3,15 @@ import './Home.scss';
 import Navigation from './components/Navigation';
 import Sparkle from './components/Sparkle';
 import About from './About';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <header className="header col-9 offset-3 nested" style={{padding: "2vw 0"}}>
-          <h1 className="header-text col-4"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</h1>
-          <div className="col-4 offset-neg-1">
+        <header className="header" style={{ padding: "32px 0" }}>
+          <h1 className="header-text"><strong>👑 Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</h1>
+          <div className="header-image-wrapper">
             <div className="header-image">
               <Sparkle />
             </div>
@@ -50,12 +49,12 @@ class Home extends Component {
               </Link>
             </li>
 
-            <li className="project col-4 nested" id="project-3">
+            <li className="project col-3 offset-2 nested" id="project-3">
               <Link className="project-link" to="/design/project/beauty/">
-                <div className="project-number col-1">
+                <div className="project-number col-3">
                   <h3>03</h3>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                   <div className="image" style={{backgroundImage: "url(images/thumbs/thumb-beautiful.jpg)"}}></div>
                   <h6 className="active">SFPC</h6>
                   <h2>What do we perceive as beautiful?</h2>
@@ -63,6 +62,20 @@ class Home extends Component {
                 </div>
               </Link>
             </li>
+
+           <li className="project col-4 nested" id="project-4">
+            <Link className="project-link" to="/design/project/fashion-avgs/">
+              <div className="project-number col-2">
+                <h3>04</h3>
+                <h6 className="active">Experiments</h6>
+                <h2>Fashion averages</h2>
+                <p>What's the average of fashion week?</p>
+              </div>
+              <div className="col-2">
+                <div className="image" style={{backgroundImage:"url(images/thumbs/thumb-fashion-avgs.jpg)"}}></div>
+              </div>
+            </Link>
+          </li>
 
           </ul>
         </section>
