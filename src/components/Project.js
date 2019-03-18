@@ -3,6 +3,15 @@ import './Project.scss';
 import studentProgress from '../assets/images/thumbs/thumb-student-progress.png';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+class ProjectContainer extends Component {
+  render() {
+    return (
+      <div className="col-7 offset-3 nested" style={{padding: "2vw 0"}}>
+      </div>
+    )
+  }
+}
+
 class Project extends Component {
   render() {
     return (
@@ -50,14 +59,28 @@ class Project extends Component {
 
           <h2 className="large-spacer-top col-5">Iteration</h2>
 
+          <p className="large-paragraph medium-spacer-bottom col-5">At this point, we pulled in the engineers and started building. We recruited an initial pilot group of 30 teachers. Each week, we sent out a survey asking teachers to reflect on the new Progress feature and conducted short interviews with 2-3 teachers to get their reflections. This is where we started:</p>
+
+
         </section>
-        <section className="col-7 nested next-shelf">
-          <li className="project col-3 nested" id="project-2" to="/design/project/review-game/">
-            <Link className="project-link" to="/design/project/review-game/" style={{display:"block"}}>
+        <section className="col-8 nested offset-neg-1 next-shelf">
+          <li className="project col-4 nested" to="/design/project/review-game/">
+            <Link className="project-link" to="/design/project/review-game/">
+              <div className="right-text col-1">
+                <h6 className="active">Previous</h6>
+              </div>
               <div className="col-3">
-                <h6 className="active">Khan Academy</h6>
                 <h2>Math review game</h2>
-                <p>How can we help teachers to identify and fill student gaps in learning?</p>
+              </div>
+            </Link>
+          </li>
+          <li className="project col-4 nested" to="/design/project/review-game/">
+            <Link className="project-link" to="/design/project/review-game/">
+              <div className="right-text col-3">
+                <h2>Another project title</h2>
+              </div>
+              <div className="next-shelf-label col-1">
+                <h6 className="active">Next</h6>
               </div>
             </Link>
           </li>

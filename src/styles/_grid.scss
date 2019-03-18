@@ -17,6 +17,7 @@ $max-width: $column-width * 12;
 .page-wrapper {
   max-width: $max-width;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 
@@ -65,8 +66,9 @@ $max-width: $column-width * 12;
   }
 }
 
-@media screen and (max-width: 1296px) {
-  @for $i from 1 to 6 {
+@media screen and (max-width: 768px) {
+  $column-width: 64px;
+  @for $i from 1 to 12 {
     .col-#{$i} {
       width: $column-width * $i;
       padding: 0 ($gutter/2);
@@ -74,23 +76,11 @@ $max-width: $column-width * 12;
     .offset-#{$i} {
       margin-left: $column-width * $i;
     }
+
     .offset-neg-#{$i} {
       margin-left: - $column-width * $i;
     }
-    @for $j from 7 to 12 {
-      .col-#{$j} {
-        width: $column-width * $i;
-        padding: 0 ($gutter/2);
-      }
-      .offset-#{$j} {
-        margin-left: $column-width * $i;
-      }
-      .offset-neg-#{$j} {
-        margin-left: - $column-width * $i;
-      }
-    }
   }
-
   .page-wrapper {
     max-width: $column-width * 12;
   }

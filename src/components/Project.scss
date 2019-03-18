@@ -65,12 +65,46 @@ ul.text-list {
   }
 }
 
+.next-shelf {
+  align-items: center;
+  display: flex;
+  margin-top: 90px;
+  .right-text {
+    text-align: right;
+  }
+  .project-link {
+    align-items: center;
+  }
+  &:hover {
+    h2 {
+        color: $pink;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .project-header
+  .project-image {
+    border-radius: 0;
+    padding: 0;
+  }
+  .project-header {
+    margin-top: $medium-spacer;
+  }
+  .project-image {
+    margin-left: -16px;
+    width: 100vw;
+  }
   .text-group {
     flex-direction: column;
-    margin-bottom: $large-spacer;
+  }
+  .reflections {
+    display: none;
   }
   p.large-paragraph {
     font-size: 17px;
+  }
+  ul.text-list {
+    padding: 0 32px;
   }
 }

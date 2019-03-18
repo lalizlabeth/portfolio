@@ -7,8 +7,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class About extends Component {
   render() {
-
-      console.log("match",  this.props.match);
     return (
       <div>
         <header className="header col-9 offset-3 nested" style={{padding: "2vw 0"}}>
@@ -19,6 +17,9 @@ class About extends Component {
             </div>
           </div>
         </header>
+
+        <section className="projects-wrapper">
+        </section>
       </div>
     );
   }
