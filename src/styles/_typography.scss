@@ -1,7 +1,8 @@
 @import "_colors";
 @import url('https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,700');
 
-h1 {
+h1,
+h1 a {
   color: $gray;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 56px;
@@ -9,6 +10,14 @@ h1 {
   line-height: 1.15;
   strong {
     color: $off-black;
+  }
+  a {
+    color: $pink;
+    display: inline;
+    &:hover {
+      text-decoration-color: $pink;
+      text-decoration: underline;
+    }
   }
 }
 

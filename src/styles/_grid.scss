@@ -44,10 +44,28 @@ $max-width: $column-width * 12;
   }
 }
 
-
-
 @media screen and (max-width: 1536px) {
   $column-width: 108px;
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      width: $column-width * $i;
+      padding: 0 ($gutter/2);
+    }
+    .offset-#{$i} {
+      margin-left: $column-width * $i;
+    }
+
+    .offset-neg-#{$i} {
+      margin-left: - $column-width * $i;
+    }
+  }
+  .page-wrapper {
+    max-width: $column-width * 12;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  $column-width: 8vw;
   @for $i from 1 to 12 {
     .col-#{$i} {
       width: $column-width * $i;

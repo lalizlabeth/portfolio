@@ -75,9 +75,10 @@ ul.text-list {
   .project-link {
     align-items: center;
   }
-  &:hover {
+  h2:hover {
     h2 {
-        color: $pink;
+      text-decoration: underline;
+      text-decoration-color: $pink;
     }
   }
 }
