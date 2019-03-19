@@ -19,7 +19,7 @@ class About extends Component {
 
         <section className="projects-wrapper">
           <ul className="about-modules col-8 offset-2 nested">
-            <div className="about-group">
+            <div className="about-group col-8 nested">
               <li className="bio-text col-6 offset-1">
                 <h1>👋🏼 I'm currently a product designer at <a href="https://www.khanacademy.org"><strong>Khan Academy</strong></a>. Chat with me about:</h1>
               </li>

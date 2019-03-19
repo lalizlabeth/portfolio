@@ -42,3 +42,21 @@
     color: $gray;
   }
 }
+
+// Mobile screens
+
+@media screen and (max-width: 450px) {
+  .about-group.col-8.nested {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .social-media.col-1 {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+  }
+  .bio-text,
+  .social-media {
+    margin-top: $small-spacer;
+  }
+}

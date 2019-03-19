@@ -110,6 +110,7 @@ $max-width: $column-width * 12;
 @media screen and (max-width: 450px) {
   @for $i from 1 to 12 {
     .col-#{$i} {
+      flex-direction: column;
       width: 100%;
     }
   }
