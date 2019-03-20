@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lalizlabeth.github.io/portfolio",
+  "homepage": "https://elizabethylin.com/portfolio",
   "dependencies": {
     "bourbon-neat": "^3.0.1",
     "eyeglass": "^2.2.1",
