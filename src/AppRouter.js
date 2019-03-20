@@ -3,7 +3,7 @@ import Home from './Home';
 import About from './About';
 import Project from './components/Project'
 import Navigation from './components/Navigation';
-import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 
 class AppRouter extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Project.scss';
 import studentProgress from '../assets/images/thumbs/thumb-student-progress.png';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class ProjectContainer extends Component {
   render() {

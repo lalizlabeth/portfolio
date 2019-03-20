@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './Home.scss';
-import Navigation from './components/Navigation';
 import Sparkle from './components/Sparkle';
-import About from './About';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   render() {

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './About.scss';
-import Navigation from './components/Navigation';
 import Sparkle from './components/Sparkle';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class About extends Component {
   render() {
@@ -25,17 +22,17 @@ class About extends Component {
               </li>
 
               <ul className="social-media col-1">
-                <li><a className="social-media-link">Resume</a></li>
-                <li><a className="social-media-link">Email</a></li>
-                <li><a className="social-media-link">LinkedIn</a></li>
-                <li><a className="social-media-link">Twitter</a></li>
-                <li><a className="social-media-link">Dribbble</a></li>
+                <li><a href="ElizabethLinResume-2019.pdf" className="social-media-link">Resume</a></li>
+                <li><a href="mailto:elizabethylin@gmail.com" className="social-media-link">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/elizabethylin/" className="social-media-link">LinkedIn</a></li>
+                <li><a href="https://twitter.com/lalizlabeth" className="social-media-link">Twitter</a></li>
+                <li><a href="https://dribbble.com/lalizlabeth" className="social-media-link">Dribbble</a></li>
               </ul>
             </div>
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>👠</h2>
+                <h2><span role="img" alt="high heel">👠</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Anything fashion-related</span></h2>
@@ -45,7 +42,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>🏫</h2>
+                <h2><span role="img" alt="school">🏫</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Teaching design</span></h2>
@@ -55,7 +52,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>🎵</h2>
+                <h2><span role="img" alt="music note">🎵</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Classifying music</span></h2>
@@ -65,7 +62,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>📚</h2>
+                <h2><span role="img" alt="stack of books">📚</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Books</span></h2>
@@ -75,7 +72,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>🐦</h2>
+                <h2><span role="img" alt="bird">🐦</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Folding paper</span></h2>
@@ -85,7 +82,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>🎷</h2>
+                <h2><span role="img" alt="saxophone">🎷</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Playing classical saxophone</span></h2>
@@ -95,7 +92,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>🎈</h2>
+                <h2><span role="img" alt="balloon">🎈</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Planning events</span></h2>
@@ -105,7 +102,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2>💻</h2>
+                <h2><span role="img" alt="laptop">💻</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Making things at SFPC</span></h2>
