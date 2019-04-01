@@ -35,6 +35,9 @@
 .project-image {
   border-radius: $border-radius;
   width: 100%;
+  &.vertical {
+    width: 60%;
+  }
 }
 
 p.large-paragraph {
@@ -92,7 +95,9 @@ ul.text-list {
   .project-header {
     margin-top: $medium-spacer;
   }
+  .project-header,
   .project-image {
+    border-radius: 0;
     margin-left: -16px;
     width: 100vw;
   }

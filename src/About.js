@@ -18,7 +18,7 @@ class About extends Component {
           <ul className="about-modules col-8 offset-2 nested">
             <div className="about-group col-8 nested">
               <li className="bio-text col-6 offset-1">
-                <h1>👋🏼 I'm currently a product designer at <a href="https://www.khanacademy.org"><strong>Khan Academy</strong></a>. Chat with me about:</h1>
+                <h1><span role="img" aria-label="wave">👋🏼</span> I'm currently a product designer at <a href="https://www.khanacademy.org"><strong>Khan Academy</strong></a>. Chat with me about:</h1>
               </li>
 
               <ul className="social-media col-1">
@@ -32,7 +32,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="high heel">👠</span></h2>
+                <h2><span role="img" aria-label="high heel">👠</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Anything fashion-related</span></h2>
@@ -42,7 +42,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="school">🏫</span></h2>
+                <h2><span role="img" aria-label="school">🏫</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Teaching design</span></h2>
@@ -52,7 +52,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="music note">🎵</span></h2>
+                <h2><span role="img" aria-label="music note">🎵</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Classifying music</span></h2>
@@ -62,7 +62,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="stack of books">📚</span></h2>
+                <h2><span role="img" aria-label="stack of books">📚</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Books</span></h2>
@@ -72,7 +72,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="bird">🐦</span></h2>
+                <h2><span role="img" aria-label="bird">🐦</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Folding paper</span></h2>
@@ -82,7 +82,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="saxophone">🎷</span></h2>
+                <h2><span role="img" aria-label="saxophone">🎷</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Playing classical saxophone</span></h2>
@@ -92,7 +92,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="balloon">🎈</span></h2>
+                <h2><span role="img" aria-label="balloon">🎈</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Planning events</span></h2>
@@ -102,7 +102,7 @@ class About extends Component {
 
             <li className="about-module col-6 nested">
               <div className="project-number col-1">
-                <h2><span role="img" alt="laptop">💻</span></h2>
+                <h2><span role="img" aria-label="laptop">💻</span></h2>
               </div>
               <div className="col-5">
                 <h2><span className="about-module-text">Making things at SFPC</span></h2>

@@ -65,8 +65,8 @@ $max-width: $column-width * 12;
 }
 
 @media screen and (max-width: 1296px) {
-  $column-width: 8vw;
-  @for $i from 1 to 12 {
+  $column-width: 10vw;
+  @for $i from 1 to 10 {
     .col-#{$i} {
       width: $column-width * $i;
       padding: 0 ($gutter/2);
@@ -85,16 +85,16 @@ $max-width: $column-width * 12;
 }
 
 @media screen and (max-width: 768px) {
-  $column-width: 64px;
-  @for $i from 1 to 12 {
+  $column-width: 10vw;
+  @for $i from 1 to 10 {
     .col-#{$i} {
       width: $column-width * $i;
       padding: 0 ($gutter/2);
     }
     .offset-#{$i} {
       margin-left: $column-width * $i;
+      margin-left: 0;
     }
-
     .offset-neg-#{$i} {
       margin-left: - $column-width * $i;
     }
@@ -107,11 +107,11 @@ $max-width: $column-width * 12;
 
 // Mobile screens
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   @for $i from 1 to 12 {
     .col-#{$i} {
       flex-direction: column;
-      width: 100%;
+      width: 100vw;
     }
   }
   @for $i from 1 to 12 {

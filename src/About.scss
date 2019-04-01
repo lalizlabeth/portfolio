@@ -1,5 +1,9 @@
 @import "styles/_base";
 
+.header {
+  margin-bottom: $medium-spacer;
+}
+
 .header-image.about {
   background-image: url("/images/elizabeth-horizontal.jpg");
 }
@@ -44,8 +48,7 @@
 }
 
 // Mobile screens
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .about-group.col-8.nested {
     display: flex;
     flex-direction: column-reverse;

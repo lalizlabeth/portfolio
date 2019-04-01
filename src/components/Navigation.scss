@@ -17,11 +17,12 @@
 }
 
 // Media Queries
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .navigation {
     &.col-2 {
       flex-direction: row;
       padding: 0;
+      width: 100%;
     }
     height: auto;
     justify-content: flex-start;
@@ -29,6 +30,10 @@
     position: fixed;
     text-align: left;
     z-index: 100;
+    &::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
     a {
       background: $pink;
       color: $white;
@@ -36,6 +41,7 @@
       padding: 16px 24px;
       &.active {
         background: $white;
+        color: $pink;
       }
     }
   }
