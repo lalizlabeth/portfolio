@@ -18,6 +18,9 @@
 .text-group {
   display: flex;
   flex-direction: row;
+  .project-image {
+
+  }
 }
 
 .large-spacer-top {
@@ -40,11 +43,19 @@
   }
 }
 
-p.large-paragraph {
+p.large-paragraph,
+p.large-paragraph a {
   color: $dark-gray;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
+  a {
+    color: $pink;
+    display: inline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 p.reflections {

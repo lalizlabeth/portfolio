@@ -48,7 +48,7 @@ class Home extends Component {
             </li>
 
             <li className="project col-3 offset-2 nested" id="project-3">
-              <Link className="project-link" to="/design/project/beauty/">
+              <Link className="project-link" to="/experiments/project/beauty/">
                 <div className="project-number col-4">
                   <h3>03</h3>
                 </div>
@@ -62,7 +62,7 @@ class Home extends Component {
             </li>
 
            <li className="project col-4 nested" id="project-4">
-            <Link className="project-link" to="/design/project/fashion-avgs/">
+            <Link className="project-link" to="/experiments/project/fashion-avgs/">
               <div className="project-number col-2">
                 <h3>04</h3>
                 <h6 className="active">Experiments</h6>

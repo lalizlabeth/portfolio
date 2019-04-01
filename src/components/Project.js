@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './Project.scss';
+import { Link } from "react-router-dom";
+
 import studentProgressHeader from '../assets/images/thumbs/thumb-student-progress.png';
 import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
-import { Link } from "react-router-dom";
+import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
+
 import StudentProgress from '../projects/StudentProgress';
 import FashionAverages from '../projects/FashionAverages';
+import CulturalValues from '../projects/CulturalValues';
 
 class ProjectContainer extends Component {
 
@@ -35,14 +39,22 @@ class ProjectContainer extends Component {
           description="How can we help teachers identify and fill student gaps in learning?"
           body=<StudentProgress/>/>)
         break;
-        case "fashion-avgs":
-          project =
-          (<Project
-            title="Fashion averages"
-            header={fashionAveragesHeader}
-            description="Who is the average of fashion week?"
-            body=<FashionAverages/>/>)
-          break;
+      case "fashion-avgs":
+        project =
+        (<Project
+          title="Fashion averages"
+          header={fashionAveragesHeader}
+          description="Who is the average of fashion week?"
+          body=<FashionAverages/>/>)
+        break;
+      case "cultural-values":
+        project =
+        (<Project
+          title="Cultural values"
+          header={culturalValuesHeader}
+          description="Designing Khan Academy's new cultural values."
+          body=<CulturalValues/>/>)
+        break;
       default:
     }
 
