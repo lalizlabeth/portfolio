@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Home from './Home';
 import About from './About';
+import Design from './Design';
+import Illustration from './Illustration';
+import Experiments from './Experiments';
+import Teaching from './Teaching';
 import ProjectContainer from './components/Project'
 import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -18,6 +22,10 @@ class AppRouter extends Component {
               </Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about/" component={About} />
+              <Route path="/design/" component={Design} />
+              <Route path="/illustration/" component={Illustration} />
+              <Route path="/experiments/" component={Experiments} />
+              <Route path="/teaching/" component={Teaching} />
               <Route path="*/project/:id" component={ProjectContainer} />
             </div>
           </ScrollToTop>

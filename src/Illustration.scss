@@ -1,0 +1,9 @@
+@import "styles/_base";
+
+.header {
+  margin-bottom: $medium-spacer;
+}
+
+.header-image.illustration {
+  background-image: url("assets/images/headers/illustration.png");
+}
