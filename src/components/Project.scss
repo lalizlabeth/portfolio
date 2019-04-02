@@ -18,9 +18,6 @@
 .text-group {
   display: flex;
   flex-direction: row;
-  .project-image {
-
-  }
 }
 
 .large-spacer-top {
@@ -61,13 +58,14 @@ p.large-paragraph a {
 p.reflections {
   color: $pink;
   font-family: "PT Mono", monospace;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4;
 }
 
 ul.text-list {
   li {
     color: $dark-gray;
+    font-size: 20px;
     list-style: square;
     margin-bottom: $small-spacer;
     strong {
@@ -94,6 +92,23 @@ ul.text-list {
       text-decoration: underline;
       text-decoration-color: $pink;
     }
+  }
+}
+
+.video-wrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 

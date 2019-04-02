@@ -6,18 +6,24 @@ class StudentProgress extends Component {
       <section className="col-7 nested">
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">This was a 6 month-long project where we rearchitected the Khan Academy teacher dashboard. The team consisted of myself, a product manager, and 3 engineers. We shipped the feature set in Fall 2018 for Back-to-School.</p>
-          <p className="reflections col-2">My notes and reflections about the project will go here!</p>
+          <p className="reflections col-2">My notes and reflections will go here.</p>
         </div>
 
         <h2 className="col-5">The Problem</h2>
 
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">In 2017, we introduced an assignments feature to help teachers target individualized content at their students. Teachers could assign any item of content (exercises, videos, articles, quizzes) with a due date to any group of students. There was no easy way for teachers to view individual student progress over time or find trends in their learning. Student progress also only existed for math and computer science classrooms.</p>
-          <p className="reflections col-2">Yay! More notez!</p>
+          <p className="reflections col-2">The classroom team was still only in its 2nd year.</p>
         </div>
+
+          <p className="large-paragraph medium-spacer-bottom col-5">Previously, the assignments feature looked like this. In order for teachers to see student scores, teachers had to click on X / Y.</p>
 
         <div className="col-5 medium-spacer-bottom">
           <img className="project-image" alt="Old teacher dashboard" src={require("../assets/images/student-progress/old-1.png")}/>
+        </div>
+
+        <div className="col-5 medium-spacer-bottom">
+          <img className="project-image" alt="Old teacher dashboard" src={require("../assets/images/student-progress/old-2.png")}/>
         </div>
 
         <p className="large-paragraph medium-spacer-bottom col-5">Our goal was to give all teachers a way to view their students’ progress that fits into their current workflow and surfaces patterns in student understanding.</p>

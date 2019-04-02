@@ -6,10 +6,12 @@ import studentProgressHeader from '../assets/images/thumbs/thumb-student-progres
 import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
 import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
+import beautyHeader from '../assets/images/beauty/cover.jpg';
 
 import StudentProgress from '../projects/StudentProgress';
 import FashionAverages from '../projects/FashionAverages';
 import CulturalValues from '../projects/CulturalValues';
+import Beauty from '../projects/Beauty';
 
 class ProjectContainer extends Component {
 
@@ -54,6 +56,14 @@ class ProjectContainer extends Component {
           header={culturalValuesHeader}
           description="Designing Khan Academy's new cultural values."
           body=<CulturalValues/>/>)
+        break;
+      case "beauty":
+        project =
+        (<Project
+          title="What do we perceive as beautiful?"
+          header={beautyHeader}
+          description="An interactive installation questioning our assumptions about beauty standards."
+          body=<Beauty/>/>)
         break;
       default:
     }
