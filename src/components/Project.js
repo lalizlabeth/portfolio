@@ -7,11 +7,14 @@ import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
 import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
 import beautyHeader from '../assets/images/beauty/cover.jpg';
+import sephoraHeader from '../assets/images/sephora/cover.jpg';
 
 import StudentProgress from '../projects/StudentProgress';
 import FashionAverages from '../projects/FashionAverages';
 import CulturalValues from '../projects/CulturalValues';
 import Beauty from '../projects/Beauty';
+import SephoraSorting from '../projects/SephoraSorting';
+import ReviewGame from '../projects/ReviewGame';
 
 class ProjectContainer extends Component {
 
@@ -39,7 +42,7 @@ class ProjectContainer extends Component {
           title="In-class review game"
           header={reviewGameHeader}
           description="How can we help teachers identify and fill student gaps in learning?"
-          body=<StudentProgress/>/>)
+          body=<ReviewGame/>/>)
         break;
       case "fashion-avgs":
         project =
@@ -64,6 +67,14 @@ class ProjectContainer extends Component {
           header={beautyHeader}
           description="An interactive installation questioning our assumptions about beauty standards."
           body=<Beauty/>/>)
+        break;
+      case "sephora":
+        project =
+        (<Project
+          title="Skintone"
+          header={sephoraHeader}
+          description="Sorting the makeup aisle."
+          body=<SephoraSorting/>/>)
         break;
       default:
     }

@@ -21,11 +21,11 @@ class AppRouter extends Component {
                 <Route component={Navigation} />
               </Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/about/" component={About} />
-              <Route path="/design/" component={Design} />
-              <Route path="/illustration/" component={Illustration} />
-              <Route path="/experiments/" component={Experiments} />
-              <Route path="/teaching/" component={Teaching} />
+              <Route exact path="/about/" component={About} />
+              <Route exact path="/design/" component={Design} />
+              <Route exact path="/illustration/" component={Illustration} />
+              <Route exact path="/experiments/" component={Experiments} />
+              <Route exact path="/teaching/" component={Teaching} />
               <Route path="*/project/:id" component={ProjectContainer} />
             </div>
           </ScrollToTop>

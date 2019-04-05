@@ -9,27 +9,33 @@ class StudentProgress extends Component {
           <p className="reflections col-2">My notes and reflections will go here.</p>
         </div>
 
-        <h2 className="col-5">The Problem</h2>
+        <h2 className="col-5">The problem</h2>
 
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">In 2017, we introduced an assignments feature to help teachers target individualized content at their students. Teachers could assign any item of content (exercises, videos, articles, quizzes) with a due date to any group of students. There was no easy way for teachers to view individual student progress over time or find trends in their learning. Student progress also only existed for math and computer science classrooms.</p>
-          <p className="reflections col-2">The classroom team was still only in its 2nd year.</p>
+          <p className="reflections col-2">The classroom team was still only in its 2nd year!</p>
         </div>
 
-          <p className="large-paragraph medium-spacer-bottom col-5">Previously, the assignments feature looked like this. In order for teachers to see student scores, teachers had to click on X / Y.</p>
+        <p className="large-paragraph medium-spacer-bottom col-5">Previously, the assignments feature looked like this. In order for teachers to see student scores, teachers had to click on X / Y.</p>
 
-        <div className="col-5 medium-spacer-bottom">
-          <img className="project-image" alt="Old teacher dashboard" src={require("../assets/images/student-progress/old-1.png")}/>
+        <div className="text-group">
+          <div className="col-5 medium-spacer-bottom">
+            <img className="project-image" alt="Old teacher dashboard" src={require("../assets/images/student-progress/old-1.png")}/>
+          </div>
+          <p className="reflections col-2">This page was scary because there was so much blue! The CTA's didn't stand out at all and teachers didn't really understand what to do here. They could also only edit 1 assignment at once.</p>
         </div>
 
-        <div className="col-5 medium-spacer-bottom">
-          <img className="project-image" alt="Old teacher dashboard" src={require("../assets/images/student-progress/old-2.png")}/>
+        <div className="text-group">
+          <div className="col-5 medium-spacer-bottom">
+            <img className="project-image" alt="Old teacher dashboard" src={require("../assets/images/student-progress/old-2.png")}/>
+          </div>
+          <p className="reflections col-2">This was difficult to scan because we only use one color. Teachers were also frustrated that they could only see one assignment at once.</p>
         </div>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">Our goal was to give all teachers a way to view their students’ progress that fits into their current workflow and surfaces patterns in student understanding.</p>
+        <p className="large-paragraph medium-spacer-bottom col-5">We hoped to address this question: How might we make it easier for teachers to diagnose patterns and fill student gaps in knowledge?</p>
 
-        <h2 className="large-spacer-top col-5">Initial Explorations & Research</h2>
-        <p className="large-paragraph medium-spacer-bottom col-5">We had a month to explore and research different directions to display student progress. We started by interviewing 10 non-math teachers to understand how they track student progress and growth. These are some of our high level findings:</p>
+        <h2 className="large-spacer-top col-5">Initial explorations & research</h2>
+        <p className="large-paragraph medium-spacer-bottom col-5">We had a month to explore and research different directions to display student progress. We started by interviewing 10 non-math teachers to understand how they track student progress and growth. We asked questions like: What do you look for in order to know if students understand the material? How do you assess for student mastery? These are some of our high level findings:</p>
 
         <ul className="text-list medium-spacer-bottom col-5">
           <li><strong>Teachers want to see individual student effort.</strong> If they did poorly on an exercise, did they watch a related video or read a related article? Did they use any hints? Have they improved since last week?</li>

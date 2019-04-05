@@ -26,7 +26,7 @@ class Beauty extends Component {
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">
             I created a web-based game using Matter.js called What do we perceive as beautiful? with a goal to create the most beautiful thing from the set of objects. Everyone was constrained to the same set of geometries. After a person is done drawing, they see everyone else's creation. Here is a demo of the entire experience:</p>
-          <p className="reflections col-2">I was originally set on the idea of a joystick, but it just wasn't the right interaction <span role="image" aria-label="sob">😭</span></p>
+          <p className="reflections col-2">I was originally set on the idea of a joystick, but it just wasn't the right interaction <span role="img" aria-label="sob">😭</span></p>
         </div>
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">
@@ -34,19 +34,19 @@ class Beauty extends Component {
           <p className="reflections col-2">There was also a fun glitch where if you used enough force, you could fling the objects off the page.</p>
         </div>
         <div className="col-5 medium-spacer-bottom video-wrapper">
-          <iframe className="project-image" src="https://www.youtube.com/embed/N0sn4nsE12k" autoplay="" muted="" loop=""></iframe>
+          <iframe title="beauty-demo-video" className="project-image" src="https://www.youtube.com/embed/N0sn4nsE12k" autoplay="" muted="" loop=""></iframe>
         </div>
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">
             During the showcase, I observed people interacting with the display and found that people tended to fall into two camps of beauty: disorder and order. Some participants wanted to create guidelines for the set of shapes and were really bothered by the irregular blob. Other participants tried to create the most unique beautiful thing through breaking the system. Here is a compilation of some of their interactions:</p>
         </div>
         <div className="col-5 medium-spacer-bottom video-wrapper">
-          <iframe className="project-image" src="https://www.youtube.com/embed/HIeOBNN2Kww" autoplay="" muted="" loop=""></iframe>
+          <iframe title="beauty-compilation-video" className="project-image" src="https://www.youtube.com/embed/HIeOBNN2Kww" autoplay="" muted="" loop=""></iframe>
         </div>
 
         <p className="large-paragraph medium-spacer-bottom col-5">At the end of day 2, there were over 100 different beautiful things in the gallery:</p>
         <div className="col-5 medium-spacer-bottom">
-          <video className="project-image" alt="All the things" src={require("../assets/images/beauty/all-the-things.mov")} autoPlay muted loop/>
+          <img className="project-image" alt="All beautiful things" src={require("../assets/images/beauty/gallery.jpg")}/>
         </div>
         <div className="text-group">
           <p className="large-paragraph medium-spacer-bottom col-5">

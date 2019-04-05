@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Experiments.scss';
-import Sparkle from './components/Sparkle';
 
 class Experiments extends Component {
   render() {
