@@ -33,7 +33,7 @@
 }
 
 .project-image {
-  border-radius: $border-radius;
+  // border-radius: $border-radius;
   width: 100%;
   &.vertical {
     width: 60%;
@@ -46,12 +46,22 @@ p.large-paragraph a {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
+  strong {
+    font-weight: 600;
+  }
   a {
     color: $pink;
     display: inline;
     &:hover {
       text-decoration: underline;
     }
+  }
+  &.quote {
+    border-left: 2px solid $pink;
+    color: $gray;
+    font-size: 18px;
+    font-style: italic;
+    padding: 0 $medium-spacer;
   }
 }
 

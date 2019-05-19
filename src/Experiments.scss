@@ -7,3 +7,12 @@
 .header-image.experiments {
   background-image: url("assets/images/headers/experiments.jpg");
 }
+
+.project-thumb-fixed {
+  height: 250px;
+  margin-bottom: $small-spacer;
+  .project-thumb {
+    height: 250px;
+    object-fit: cover;
+  }
+}

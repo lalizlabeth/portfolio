@@ -71,10 +71,10 @@ h6 {
 }
 
 *::selection {
-  background: #FFF134; /* WebKit/Blink Browsers */
+  background: $yellow; /* WebKit/Blink Browsers */
 }
 *::-moz-selection {
-  background: $light-pink; /* Gecko Browsers */
+  background: $yellow; /* Gecko Browsers */
 }
 
 @media screen and (max-width: 1536px) {

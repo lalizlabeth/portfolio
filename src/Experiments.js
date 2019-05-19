@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Experiments.scss';
+import { Link } from "react-router-dom";
 
 class Experiments extends Component {
   render() {
@@ -13,6 +14,40 @@ class Experiments extends Component {
         </header>
 
         <section className="projects-wrapper">
+        <ul className="projects col-10 offset-2 nested">
+          <li className="project col-8 nested" id="project-1">
+            <Link className="project-link" to="/design/project/student-progress/">
+              <div className="project-number col-1">
+                <h3>01</h3>
+              </div>
+              <div className="col-3 project-thumb-fixed">
+                <img className="project-thumb" alt="Student progress thumbnail" src="images/thumbs/thumb-beautiful.jpg" />
+              </div>
+              <div className="col-3 project-title">
+                <h6 className="active">Experiments</h6>
+                <h2>What do we perceive as beautiful?</h2>
+                <p>My final showcase project at the School for Poetic Computation</p>
+              </div>
+            </Link>
+          </li>
+
+          <li className="project col-8 nested" id="project-1">
+            <Link className="project-link" to="/design/project/student-progress/">
+              <div className="project-number col-1">
+                <h3>02</h3>
+              </div>
+              <div className="col-3 project-thumb-fixed">
+                <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-fashion.jpg" />
+              </div>
+              <div className="col-3 project-title">
+                <h6 className="active">Experiments</h6>
+                <h2>Fashion averagese</h2>
+                <p>What is the average  model of fashion week?</p>
+              </div>
+            </Link>
+          </li>
+
+        </ul>
         </section>
 
       </div>

@@ -60,7 +60,7 @@
     color: $gray;
   }
   .project-thumb {
-    border: 4px solid transparent;
+    // border: 4px solid transparent;
     border-radius: $border-radius;
     height: auto;
     margin-bottom: $small-spacer;
@@ -71,7 +71,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 4px solid $light-pink;
+    box-sizing: border-box;
+    // border: 4px solid $light-pink;
     border-radius: $border-radius;
     height: 200px;
     margin-bottom: $small-spacer;
@@ -91,7 +92,7 @@
       }
       .project-thumb {
         cursor: pointer;
-        border: 4px solid $white;
+        // border: 4px solid $white;
       }
     }
   }
