@@ -32,6 +32,10 @@
   margin-top: 32px;
 }
 
+.small-spacer-bottom {
+  margin-bottom: 20px;
+}
+
 .project-image {
   // border-radius: $border-radius;
   width: 100%;
@@ -62,6 +66,18 @@ p.large-paragraph a {
     font-size: 18px;
     font-style: italic;
     padding: 0 $medium-spacer;
+  }
+}
+
+h3.project-subheading {
+  color: $off-black;
+  font-family: "PT Sans", Helvetica, Arial;
+  font-size: 24px;
+  line-height: 1.2;
+  strong {
+    color: $pink;
+    font-weight: 700;
+    font-style: normal;
   }
 }
 

@@ -60,8 +60,11 @@ class StudentProgress extends Component {
 
         <p className="large-paragraph medium-spacer-bottom col-5">We also brought together the entire team to brainstorm different visuals and forms of displaying student progress.</p>
 
-        <div className="col-5 medium-spacer-bottom">
-          <img className="project-image" alt="Brainstorming" src={require("../assets/images/student-progress/brainstorming.png")}/>
+        <div className="text-group">
+          <div className="col-5 medium-spacer-bottom">
+            <img className="project-image" alt="Brainstorming" src={require("../assets/images/student-progress/brainstorming.png")}/>
+          </div>
+          <p className="reflections col-2">We have a remote friendly team, so our brainstorms were all conducted with virtual stickies in Google Slides.</p>
         </div>
 
         <h2 className="large-spacer-top col-5">Narrowing scope</h2>
@@ -71,7 +74,7 @@ class StudentProgress extends Component {
           <div className="col-5 medium-spacer-bottom">
             <img className="project-image" alt="Versions" src={require("../assets/images/student-progress/iterations.gif")}/>
           </div>
-          <p className="reflections col-2">Notes</p>
+          <p className="reflections col-2">We had teachers describe how each version would impact their teaching!</p>
         </div>
 
         <p className="large-paragraph medium-spacer-bottom col-5">In each of these examples, we used orange to indicate students with under 70% and green to indicate students with 100%. Based on our conversations, the teachers liked...</p>
@@ -81,13 +84,16 @@ class StudentProgress extends Component {
           <li>Being able to quickly scan how their entire class is doing</li>
         </ul>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">We decided that "Progress by Student" would be the most beneficial to more teachers because it allows for teachers to quickly see individual student performance at a glance. It also felt familiar to teachers because it looks like a grade book.</p>
+        <p className="large-paragraph medium-spacer-bottom col-5">We decided that "Progress by Student" would be the most beneficial to more teachers because it allowed for both of these things. It also felt most familiar to teachers because it looks like a grade book.</p>
 
-        <div className="col-5 medium-spacer-bottom">
-          <img className="project-image" alt="Gradebook view" src={require("../assets/images/student-progress/gradebook.png")}/>
+        <div className="text-group">
+          <div className="col-5 medium-spacer-bottom">
+            <img className="project-image" alt="Gradebook view" src={require("../assets/images/student-progress/gradebook.png")}/>
+          </div>
+          <p className="reflections col-2">Teachers just want to see the raw data! Insights obscure the data and teachers want to make their own connections and assumptions.</p>
         </div>
 
-        <h2 className="large-spacer-top col-5">Iteration</h2>
+        <h2 className="large-spacer-top col-5">Feedback</h2>
 
         <p className="large-paragraph medium-spacer-bottom col-5">At this point, we pulled in the engineers and started building. We recruited an initial pilot group of 30 teachers. Each week, we sent out a survey asking teachers to reflect on the new Progress feature and conducted short interviews with 2-3 teachers to get their reflections. This is where we started:</p>
 
@@ -154,13 +160,17 @@ class StudentProgress extends Component {
           <img className="project-image" alt="Date filter " src={require("../assets/images/student-progress/date-filter.png")}/>
         </div>
 
+        <p className="large-paragraph quote medium-spacer-bottom col-5">“I give the students one week to complete a set of activities. The <strong>'Last 7 Days'</strong> option allows me to see their progress each day individually.”</p>
+
+        <p className="large-paragraph quote medium-spacer-bottom col-5">“I want to see what my students are <strong>currently</strong> working on and who needs assistance.”</p>
+
         <p className="large-paragraph medium-spacer-bottom col-5">The most popular request we had was an individual student report. We reprioritized our timeline to accomodate for this feature because we felt it was crucial to a teacher's workflow. Many teachers wanted to discuss scores with individual students or their parents without compromising other students' private information.</p>
 
         <div className="col-5 medium-spacer-bottom">
           <img className="project-image" alt="Indiviudal report page" src={require("../assets/images/student-progress/individual.jpeg")}/>
         </div>
 
-        <p className="large-paragraph medium-spacer-bottom col-5">These are just the first couple iterations of this project. We continued this process until launch!</p>
+        <p className="large-paragraph medium-spacer-bottom col-5">These are just the first couple iterations of this project. We continued this process until launch! If you're interested, I can walk you through the rest of the project in detail.</p>
 
         <h2 className="large-spacer-top col-5">What we shipped</h2>
         <p className="large-paragraph medium-spacer-bottom col-5">After conducting many user interviews and surveys, we felt really confident about launching this to 100% of our users across the world for Back To School 2018! This was our final design.</p>
@@ -177,8 +187,9 @@ class StudentProgress extends Component {
 
         <p className="large-paragraph medium-spacer-bottom col-5">We changed a few small things before launching including adding icons for easier readability, pagination for faster loads, and vertical student names.</p>
 
-        <h2 className="large-spacer-top col-5">Was it successful?</h2>
-        <p className="large-paragraph medium-spacer-bottom col-5">This feature was very successful and has an NPS of +51%! We want to continue exploring ways to make progress better for non-math classes, but this would involve a major strategy shift on many teams. In the future, we're going to explore more ways of incorporating classroom activity and trajectory into our progress tracking.</p>
+        <h2 className="large-spacer-top col-5">What's next?</h2>
+        <p className="large-paragraph medium-spacer-bottom col-5">This feature was very successful and has an NPS of +51%! The number of monthly very active learners with a teacher increased by 45%. 75-80% of monthly active teachers created an assignment within the last 28 days. Our original goal was 65%.</p>
+        <p className="large-paragraph medium-spacer-bottom col-5">We want to continue exploring ways to make progress better for non-math classes, but this would involve a major strategy shift on many teams. In the future, we're going to explore more ways of incorporating classroom activity and trajectory into our progress tracking.</p>
 
     </section>
     );
