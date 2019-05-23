@@ -21,7 +21,7 @@ class Experiments extends Component {
                 <h3>01</h3>
               </div>
               <div className="col-3 project-thumb-fixed">
-                <img className="project-thumb" alt="Student progress thumbnail" src="images/thumbs/thumb-beautiful.jpg" />
+                <img className="project-thumb" alt="What is beautiful thumbnail" src="images/thumbs/thumb-beautiful.jpg" />
               </div>
               <div className="col-3 project-title">
                 <h6 className="active">Experiments</h6>
@@ -37,12 +37,28 @@ class Experiments extends Component {
                 <h3>02</h3>
               </div>
               <div className="col-3 project-thumb-fixed">
-                <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-fashion.jpg" />
+                <img className="project-thumb" alt="Fashion averages thumbnail" src="images/thumbs/thumb-fashion.jpg" />
               </div>
               <div className="col-3 project-title">
                 <h6 className="active">Experiments</h6>
-                <h2>Fashion averagese</h2>
+                <h2>Fashion averages</h2>
                 <p>What is the average  model of fashion week?</p>
+              </div>
+            </Link>
+          </li>
+
+          <li className="project col-8 nested" id="project-1">
+            <Link className="project-link" to="/design/project/student-progress/">
+              <div className="project-number col-1">
+                <h3>02</h3>
+              </div>
+              <div className="col-3 project-thumb-fixed">
+                <img className="project-thumb" alt="Sephora thumbnail" src="images/thumbs/thumb-sephora.jpg" />
+              </div>
+              <div className="col-3 project-title">
+                <h6 className="active">Experiments</h6>
+                <h2>Undiversity of makeup</h2>
+                <p>Surfacing the lack of diversity in Sephora's make up aisle</p>
               </div>
             </Link>
           </li>

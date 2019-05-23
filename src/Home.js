@@ -25,7 +25,7 @@ class Home extends Component {
                   <h3>01</h3>
                 </div>
                 <div className="col-3">
-                  <img className="project-thumb" alt="Student progress thumbnail" src="images/thumbs/thumb-student-progress.png" />
+                  <img className="project-thumb" alt="Student progress thumbnail" src="./images/thumbs/thumb-student-progress.png" />
                   <h6 className="active">Design</h6>
                   <h2>Defining student progress</h2>
                   <p>How can we help teachers to identify and fill student gaps in learning?</p>
