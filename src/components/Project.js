@@ -71,9 +71,9 @@ class ProjectContainer extends Component {
       case "sephora":
         project =
         (<Project
-          title="Skintone"
+          title="The undiversity of makeup"
           header={sephoraHeader}
-          description="Sorting the makeup aisle."
+          description="Surfacing the lack of diversity in Sephora's make up aisle."
           body=<SephoraSorting/>/>)
         break;
       default:
