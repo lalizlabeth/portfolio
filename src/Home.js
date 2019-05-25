@@ -8,7 +8,10 @@ class Home extends Component {
     return (
       <div>
         <header className="header" style={{ padding: "48px 0" }}>
-          <h1 className="header-text"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</h1>
+          <div className="header-text-wrapper nested">
+            <h1 className="header-text col-4"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</h1>
+            <p className="title-caption col-3">This site is still under construction, so pls send bugs my way 😘!</p>
+          </div>
           <div className="header-image-wrapper">
             <div className="header-image">
               <Sparkle />

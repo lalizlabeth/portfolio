@@ -2,19 +2,28 @@ import React, { Component } from 'react';
 import './Project.scss';
 import { Link } from "react-router-dom";
 
-import studentProgressHeader from '../assets/images/thumbs/thumb-student-progress.png';
-import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
-import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
-import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
 import beautyHeader from '../assets/images/beauty/cover.jpg';
+import culturalValuesHeader from '../assets/images/cultural-values/cover.png';
+import designSystemsHeader from '../assets/images/design-systems/cover.png';
+import dottieHeader from '../assets/images/dottie/cover.png';
+import exercisesHeader from '../assets/images/exercises/cover.png';
+import fashionAveragesHeader from '../assets/images/fashion-avgs/cover.jpg';
+import hogwartsHeader from '../assets/images/hogwarts/cover.gif';
+import reviewGameHeader from '../assets/images/thumbs/thumb-review-game.png';
 import sephoraHeader from '../assets/images/sephora/cover.jpg';
+import studentProgressHeader from '../assets/images/thumbs/thumb-student-progress.png';
 
-import StudentProgress from '../projects/StudentProgress';
-import FashionAverages from '../projects/FashionAverages';
-import CulturalValues from '../projects/CulturalValues';
 import Beauty from '../projects/Beauty';
-import SephoraSorting from '../projects/SephoraSorting';
+import CulturalValues from '../projects/CulturalValues';
+import DesignSystems from '../projects/DesignSystems';
+import Dottie from '../projects/Dottie';
+import Exercises from '../projects/Exercises';
+import FashionAverages from '../projects/FashionAverages';
+import Hogwarts from '../projects/Hogwarts';
 import ReviewGame from '../projects/ReviewGame';
+import SephoraSorting from '../projects/SephoraSorting';
+import StudentProgress from '../projects/StudentProgress';
+
 
 class ProjectContainer extends Component {
 
@@ -28,29 +37,13 @@ class ProjectContainer extends Component {
     var project
 
     switch (projectPath) {
-      case "student-progress":
+      case "beauty":
         project =
         (<Project
-          title="Defining student progress"
-          header={studentProgressHeader}
-          description="How might we enable teachers to identify &amp; fill student gaps in learning?"
-          body=<StudentProgress/>/>)
-        break;
-      case "review-game":
-        project =
-        (<Project
-          title="In-class review game"
-          header={reviewGameHeader}
-          description="How can we help teachers identify and fill student gaps in learning?"
-          body=<ReviewGame/>/>)
-        break;
-      case "fashion-avgs":
-        project =
-        (<Project
-          title="Fashion averages"
-          header={fashionAveragesHeader}
-          description="Who is the average of fashion week?"
-          body=<FashionAverages/>/>)
+          title="What do we perceive as beautiful?"
+          header={beautyHeader}
+          description="An interactive installation questioning our assumptions about beauty standards."
+          body=<Beauty/>/>)
         break;
       case "cultural-values":
         project =
@@ -60,13 +53,53 @@ class ProjectContainer extends Component {
           description="Designing Khan Academy's new cultural values."
           body=<CulturalValues/>/>)
         break;
-      case "beauty":
+      case "design-systems":
         project =
         (<Project
-          title="What do we perceive as beautiful?"
-          header={beautyHeader}
-          description="An interactive installation questioning our assumptions about beauty standards."
-          body=<Beauty/>/>)
+          title="Design systems"
+          header={designSystemsHeader}
+          description="This case study is an overview of the different components I worked on at Khan Academy."
+          body=<DesignSystems/>/>)
+        break;
+      case "dottie":
+        project =
+        (<Project
+          title="Have you seen my glasses?"
+          header={dottieHeader}
+          description="Children's Book thing"
+          body=<Dottie/>/>)
+        break;
+      case "exercises":
+        project =
+        (<Project
+          title="Exercise mechanics"
+          header={exercisesHeader}
+          description="Motivating students to learn by creating "
+          body=<Exercises/>/>)
+        break;
+      case "fashion-avgs":
+        project =
+        (<Project
+          title="Fashion averages"
+          header={fashionAveragesHeader}
+          description="Who is the average of fashion week?"
+          body=<FashionAverages/>/>)
+        break;
+      case "hogwarts":
+        project =
+        (<Project
+          title="Harry Potter Hackaweek"
+          header={hogwartsHeader}
+          description="Branding for Khan Academy's yearly Harry Potter hackathon."
+          body=<Hogwarts/>/>)
+        break;
+      case "review-game":
+        project =
+        (<Project
+          title="In-class review game"
+          header={reviewGameHeader}
+          description="How can we help teachers identify and fill student gaps in learning?"
+          body=<ReviewGame/>/>)
         break;
       case "sephora":
         project =
@@ -75,6 +108,14 @@ class ProjectContainer extends Component {
           header={sephoraHeader}
           description="Surfacing the lack of diversity in Sephora's make up aisle."
           body=<SephoraSorting/>/>)
+        break;
+      case "student-progress":
+        project =
+        (<Project
+          title="Defining student progress"
+          header={studentProgressHeader}
+          description="How might we enable teachers to identify &amp; fill student gaps in learning?"
+          body=<StudentProgress/>/>)
         break;
       default:
     }

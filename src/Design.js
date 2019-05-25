@@ -33,7 +33,7 @@ class Design extends Component {
               </Link>
             </li>
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/design/project/student-progress/">
+              <Link className="project-link" to="/design/project/review-game/">
                 <div className="project-number col-1">
                   <h3>02</h3>
                 </div>
@@ -49,9 +49,25 @@ class Design extends Component {
             </li>
 
             <li className="project col-8 nested" id="project-1">
-              <Link className="project-link" to="/design/project/exercise/">
+              <Link className="project-link" to="/design/project/design-systems/">
                 <div className="project-number col-1">
                   <h3>03</h3>
+                </div>
+                <div className="col-3">
+                  <img className="project-thumb" alt="Design systems thumbnail with icons inside" src="images/thumbs/thumb-design-systems.png" />
+                </div>
+                <div className="col-3 project-title">
+                  <h6 className="active">Design</h6>
+                  <h2>Design systems</h2>
+                  <p>This case study is an overview of the different components I worked on at Khan Academy.</p>
+                </div>
+              </Link>
+            </li>
+
+            <li className="project col-8 nested" id="project-1">
+              <Link className="project-link" to="/design/project/exercises/">
+                <div className="project-number col-1">
+                  <h3>04</h3>
                 </div>
                 <div className="col-3">
                   <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-exercises.png" />
