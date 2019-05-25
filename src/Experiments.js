@@ -50,7 +50,7 @@ class Experiments extends Component {
             <li className="project col-8 nested" id="project-1">
               <Link className="project-link" to="/experiments/project/sephora/">
                 <div className="project-number col-1">
-                  <h3>02</h3>
+                  <h3>03</h3>
                 </div>
                 <div className="col-3 project-thumb-fixed">
                   <img className="project-thumb" alt="Sephora thumbnail" src="images/thumbs/thumb-sephora.jpg" />

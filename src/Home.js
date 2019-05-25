@@ -10,7 +10,7 @@ class Home extends Component {
         <header className="header" style={{ padding: "48px 0" }}>
           <div className="header-text-wrapper nested">
             <h1 className="header-text col-4"><strong>Elizabeth Lin</strong> is a product designer &amp; aspiring princess.</h1>
-            <p className="title-caption col-3">This site is still under construction, so pls send bugs my way 😘!</p>
+            <p className="title-caption col-3">This site is still under construction, so pls send bugs my way <span role="img" aria-label="kissy emoji">😘!</span></p>
           </div>
           <div className="header-image-wrapper">
             <div className="header-image">
@@ -78,12 +78,12 @@ class Home extends Component {
             </Link>
           </li>
 
-          <li className="project col-4 nested" id="project-1">
+          <li className="project col-5 nested" id="project-5">
             <Link className="project-link" to="/illustrations/project/cultural-values/">
               <div className="project-number col-1">
                 <h3>05</h3>
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <img className="project-thumb" alt="Cultural values thumbnail" src="images/thumbs/thumb-cultural-values.png" />
                 <h6 className="active">Illustrations</h6>
                 <h2>Cultural values</h2>
@@ -92,9 +92,23 @@ class Home extends Component {
             </Link>
           </li>
 
-          </ul>
-        </section>
-      </div>
+          <li className="project col-3 nested" id="project-6">
+            <Link className="project-link" to="/design/project/design-systems/">
+              <div className="project-number col-4">
+                <h3>06</h3>
+              </div>
+              <div className="col-3">
+                <img className="project-thumb" alt="Design systems thumbnail" src="images/thumbs/thumb-design-systems.png" />
+                <h6 className="active">Design</h6>
+                <h2>Design systems</h2>
+                <p>Hi</p>
+              </div>
+            </Link>
+          </li>
+
+        </ul>
+      </section>
+    </div>
     );
   }
 }

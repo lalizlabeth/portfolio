@@ -72,7 +72,7 @@
   }
   .project-thumb {
     // border: 4px solid transparent;
-    background: white;
+    background: $white;
     border-radius: $border-radius;
     height: auto;
     margin-bottom: $small-spacer;
@@ -104,6 +104,7 @@
       }
       .project-thumb {
         cursor: pointer;
+        opacity: 0.8;
         // border: 4px solid $white;
       }
     }
@@ -153,6 +154,25 @@
     height: 360px;
     margin-bottom: 0;
   }
+}
+
+#project-5 {
+  margin-top: -60px;
+}
+
+#project-6 {
+  flex-direction: column;
+  .project-link {
+    display: block;
+  }
+  .project-number {
+    text-align: left;
+    margin-bottom: $small-spacer;
+  }
+  .image {
+    height: 280px;
+  }
+  margin-top: $xxlarge-spacer;
 }
 
 @media screen and (max-width: 768px) {

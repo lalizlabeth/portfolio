@@ -22,7 +22,7 @@ class Design extends Component {
                 <div className="project-number col-1">
                   <h3>01</h3>
                 </div>
-                <div className="col-3">
+                <div className="col-3 project-thumb-fixed">
                   <img className="project-thumb" alt="Student progress thumbnail" src="images/thumbs/thumb-student-progress.png" />
                 </div>
                 <div className="col-3 project-title">
@@ -37,7 +37,7 @@ class Design extends Component {
                 <div className="project-number col-1">
                   <h3>02</h3>
                 </div>
-                <div className="col-3">
+                <div className="col-3 project-thumb-fixed">
                   <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-review-game.png" />
                 </div>
                 <div className="col-3 project-title">
@@ -53,7 +53,7 @@ class Design extends Component {
                 <div className="project-number col-1">
                   <h3>03</h3>
                 </div>
-                <div className="col-3">
+                <div className="col-3 project-thumb-fixed">
                   <img className="project-thumb" alt="Design systems thumbnail with icons inside" src="images/thumbs/thumb-design-systems.png" />
                 </div>
                 <div className="col-3 project-title">
@@ -64,18 +64,34 @@ class Design extends Component {
               </Link>
             </li>
 
-            <li className="project col-8 nested" id="project-1">
+            <li className="project col-8 nested">
               <Link className="project-link" to="/design/project/exercises/">
                 <div className="project-number col-1">
                   <h3>04</h3>
                 </div>
-                <div className="col-3">
+                <div className="col-3 project-thumb-fixed">
                   <img className="project-thumb" alt="Review game thumbnail" src="images/thumbs/thumb-exercises.png" />
                 </div>
                 <div className="col-3 project-title">
                   <h6 className="active">Design</h6>
                   <h2>Exercise redesign</h2>
                   <p>How can we make learning more fun and motivational for students?</p>
+                </div>
+              </Link>
+            </li>
+
+            <li className="project col-8 nested">
+              <Link className="project-link" to="/design/project/monsterz/">
+                <div className="project-number col-1">
+                  <h3>05</h3>
+                </div>
+                <div className="col-3 project-thumb-fixed">
+                  <img className="project-thumb" alt="Monsterz game thumbnail" src="images/thumbs/thumb-monsterz.jpg" />
+                </div>
+                <div className="col-3 project-title">
+                  <h6 className="active">Design</h6>
+                  <h2>Monsterz game</h2>
+                  <p>A puzzle game inspired by Set.</p>
                 </div>
               </Link>
             </li>
